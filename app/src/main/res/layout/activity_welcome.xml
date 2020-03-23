@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_optimizationLevel="standard|dimensions"
+    android:background="@drawable/mainb"
+    tools:context=".WelcomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="end"
+            android:background="@color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitle="Mobile booking"
+            app:subtitleTextColor="@color/colorPrimary"
+            app:title="United Express - Ltd"
+            app:titleTextColor="@color/black" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Satisfaction,"
+        android:textIsSelectable="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintStart_toEndOf="@id/priority"
+        app:layout_constraintEnd_toStartOf="@id/priority"
+        app:layout_constraintBottom_toTopOf="@id/priority"
+        app:layout_constraintTop_toBottomOf="@id/priority"
+        android:textSize="20sp"
+        android:fontFamily="@font/inkfree"
+        android:id="@+id/cust"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Top Priority."
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:textIsSelectable="true"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:id="@+id/priority"
+        android:textStyle="normal"
+        android:fontFamily="@font/lobster"
+        />
+
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:minWidth="200dp"
+        android:maxWidth="220dp"
+        android:id="@+id/btn_to_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="270dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Book A Seat NOW!"
+        android:drawablePadding="0dp"
+        android:paddingStart="10dp"
+        android:drawableStart="@drawable/ic_bus_seat_black"
+        android:paddingTop="3dp"
+        android:textIsSelectable="false"
+        android:textAllCaps="false"
+        android:paddingEnd="10dp"
+        android:textColor="@color/gray"
+        android:drawableEnd="@drawable/ic_send_black"
+        android:background="@drawable/login_btn_bg"
+        android:fontFamily="@font/lobster"
+        android:textStyle="normal"
+        android:textSize="16sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
